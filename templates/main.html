@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII Art Web Application</title>
+</head>
+<body>
+    <h1>ASCII Art Web Application</h1>
+    <form action="/ascii-art" method="POST">
+        <label for="input">Enter Text:</label>
+        <br>
+        <textarea id="input-textarea" name="input" rows="10" cols="50" placeholder="Enter your text here..." required></textarea></textarea>
+
+        <br>
+        <label>Select Banner Style:</label>
+        <br>
+        <input type="radio" name="banner" value="shadow" checked>
+        <label for="banner-shadow">Shadow</label>
+        <br>
+        <input type="radio" name="banner" value="standard">
+        <label for="banner-standard">Standard</label>
+        <br>
+        <input type="radio" name="banner" value="thinkertoy">
+        <label for="banner-thinkertoy">Thinkertoy</label>
+        <br>
+        <button type="submit">Generate ASCII Art</button>
+    </form>
+</body>
+</html>
