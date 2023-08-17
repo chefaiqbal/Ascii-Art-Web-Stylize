@@ -9,6 +9,7 @@ Ascii-Art-Web provides a user-friendly interface for generating ASCII art repres
 ## Authors
 
 Amir Iqbal [aiqbal]
+
 Hatham Radhi [hradhi]
 
 ## Usage
