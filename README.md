@@ -21,7 +21,7 @@ To run the Ascii-Art-Web application:
 3. Navigate to the project directory in your terminal.
 4. Run the following command to start the application:
 ```go
-go run main.go
+go run .
 ```
 
 
