@@ -27,7 +27,7 @@ func GetAsciiLine(filename string, num int) string {
 
 func AsciiArt(input, filename string) string {
 
-	banner := "banners\\" + filename + ".txt"
+	banner := "banners/" + filename + ".txt"
 	line := ""
 	result := "\n"
 
