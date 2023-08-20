@@ -71,7 +71,7 @@ func ResultHandler(w http.ResponseWriter, r *http.Request) {
 
 	for _, letter := range inputValidation {
 		if letter < 32 || letter > 126 {
-			err := ErrorPageData{Code: "406", ErrorMsg: "INVALID INPUT"}
+			err := ErrorPageData{Code: "400", ErrorMsg: "INVALID INPUT"}
 			w.WriteHeader(http.StatusNotAcceptable)
 			errHandler(w, r, &err)
 			return
