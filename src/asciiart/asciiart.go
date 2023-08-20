@@ -2,16 +2,14 @@ package asciiart
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strings"
 )
 
-func GetAsciiLine(filename string, num int) string {
+func GetAsciiLine(filename string, num int) (string, error) {
 	file, e := os.Open(filename)
 	if e != nil {
-		fmt.Println(e.Error())
-		os.Exit(0)
+		return "", e
 	}
 	scanner := bufio.NewScanner(file)
 	lineNum := 0
@@ -22,10 +20,10 @@ func GetAsciiLine(filename string, num int) string {
 		}
 		lineNum++
 	}
-	return line
+	return line,nil
 }
 
-func AsciiArt(input, filename string) string {
+func AsciiArt(input, filename string) (string, error) {
 
 	banner := "banners/" + filename + ".txt"
 	line := ""
@@ -35,12 +33,17 @@ func AsciiArt(input, filename string) string {
 	for _, word := range args {
 		for i := 0; i < 8; i++ {
 			for _, letter := range word {
-				result += GetAsciiLine(banner, 1+int(letter-' ')*9+i)
+				asciiLine, err := GetAsciiLine(banner, 1+int(letter-' ')*9+i)
+				if err != nil { 
+					return "", err
+				}
+
+				result += asciiLine
 			}
 			line += "\n"
 			result += line
 			line = ""
 		}
 	}
-	return result
+	return result, nil
 }
