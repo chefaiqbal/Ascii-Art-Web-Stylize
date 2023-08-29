@@ -1,0 +1,178 @@
+
+
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+section
+{
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 100px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #ffffff;
+transition: 0.5s;
+
+
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo
+{
+    position: relative;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.content 
+{
+    position: relative;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .textBox h1
+{
+    color: #000000;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    align-items: center;
+
+}
+
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+div, form {
+    width: 100%;
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input, textarea {
+    width: 100%;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    resize: vertical;
+
+}
+
+
+.input-box input:focus-visible, textarea:focus-visible {
+    outline: 1px solid #E57B73;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+.select-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-box select {
+    width: 100%;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.select-box button {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 6px #0000001c;
+    background-color: #E57B73;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    font-size: .875em;
+    white-space: pre;
+    color: #000000;
+}
+
+img {
+    height: 300px;
+    object-fit: contain;
+}

@@ -12,6 +12,7 @@ func main() {
 
 	// Register the request handlers
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets/"))))
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
 	http.HandleFunc("/", server.MainHandler)
 	http.HandleFunc("/ascii-art", server.ResultHandler)
 
