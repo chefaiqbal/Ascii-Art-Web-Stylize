@@ -1,6 +1,5 @@
 # Ascii-Art-Web-Stylize
-
-Ascii-Art-Web-Stylize is an exciting project that combines ASCII art generation with a user-friendly web interface. It builds upon the foundation of the original ascii-art project, enhancing it with various banner styles. This project utilizes a Go-based web server to create a seamless user experience.
+🎨 Ascii-Art-Web-Stylize is an exciting project that merges ASCII art generation with a user-friendly web interface. It builds upon the foundation of the original ascii-art project, elevating it with various captivating banner styles. This project harnesses a Go-based web server to craft a harmonious user experience.
 
 
 ## Description
