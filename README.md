@@ -9,8 +9,6 @@ Ascii-Art-Web-Stylize empowers users to effortlessly generate ASCII art banners 
 
 ## Authors
 
-## Authors
-
 🚀 **Captain:** 
 - **Hatham Radhi**
   - Reboot01 ID: [@hradhi](https://learn.reboot01.com/hradhi)
