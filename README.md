@@ -1,20 +1,29 @@
-# Ascii-Art-Web
+# Ascii-Art-Web-Stylize
 
-Ascii-Art-Web is a web application that allows users to convert their text input into ASCII art using various banner styles. The application is implemented in Go and utilizes the net/http package for handling web requests and serving HTML templates.
+Ascii-Art-Web-Stylize is an exciting project that combines ASCII art generation with a user-friendly web interface. It builds upon the foundation of the original ascii-art project, enhancing it with various banner styles. This project utilizes a Go-based web server to create a seamless user experience.
+
 
 ## Description
 
-Ascii-Art-Web provides a user-friendly interface for generating ASCII art representations from text input. Users can choose from a range of banner styles to customize the appearance of their ASCII art.
+Ascii-Art-Web-Stylize empowers users to effortlessly generate ASCII art banners via a web interface. It offers a selection of banner styles, including shadow, standard, and thinkertoy. Users can easily input their desired text, choose a banner style, and with a single click, create visually appealing ASCII art.
 
 ## Authors
 
-Amir Iqbal [aiqbal]
+## Authors
 
-Hatham Radhi [hradhi]
+🚀 **Captain:** 
+- **Hatham Radhi**
+  - Reboot01 ID: [@hradhi](https://learn.reboot01.com/hradhi)
+
+🌟 **Team Member:** 
+- **Amir Iqbal**
+  - Reboot01 ID: [@aiqbal](https://learn.reboot01.com/aiqbal)
+
+
 
 ## Usage
 
-To run the Ascii-Art-Web application:
+To run the Ascii-Art-Web-Stylize application:
 
 1. Clone this repository to your local machine.
 2. Make sure you have Go installed.
@@ -25,7 +34,7 @@ go run .
 ```
 
 
-5. Open your web browser and go to http://localhost:8080 to access the application.
+5. Open your web browser and access the Ascii-Art-Web-Stylize interface at http://localhost:8080.
 
 ## Implementation Details
 ### ASCII Art Generation Algorithm
