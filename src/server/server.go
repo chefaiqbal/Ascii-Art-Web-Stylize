@@ -1,9 +1,9 @@
 package server
 
 import (
+	"ascii/src/asciiart"
 	"html/template"
 	"net/http"
-	"ascii/src/asciiart"
 	"strings"
 )
 
@@ -87,7 +87,15 @@ func ResultHandler(w http.ResponseWriter, r *http.Request) {
 
 	}
 	//Validation for asciiart functions
-	ascii, err := asciiart.AsciiArt(input, banner) 
+	ascii, err := asciiart.AsciiArt(input, banner)
+	if err != nil {
+		err := ErrorPageData{Code: "500", ErrorMsg: "INTERNAL SERVER ERROR"}
+		w.WriteHeader(http.StatusInternalServerError)
+		errHandler(w, r, &err)
+		return
+	}
+	//// Validating the parsing of the result page
+	result, err := template.ParseFiles("templates/ascii-art.html")
 	if err != nil {
 		err := ErrorPageData{Code: "500", ErrorMsg: "INTERNAL SERVER ERROR"}
 		w.WriteHeader(http.StatusInternalServerError)
@@ -95,7 +103,7 @@ func ResultHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	resultTemp := template.Must(template.ParseFiles("templates/ascii-art.html"))
+	resultTemp := template.Must(result, nil)
 
 	output := ResultPageData{Input: input, Banner: banner, Result: ascii}
 

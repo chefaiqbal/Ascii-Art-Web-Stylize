@@ -102,14 +102,14 @@ div, form {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    /* margin-bottom: 0.3rem; */
 }
 
 .input-box input, textarea {
@@ -125,7 +125,7 @@ div, form {
 }
 
 
-.input-box input:focus-visible, textarea:focus-visible {
+.input-box input:focus-visible, textarea:focus-visible, select:focus-visible {
     outline: 1px solid #E57B73;
 }
 
@@ -176,3 +176,13 @@ img {
     height: 300px;
     object-fit: contain;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .content .textBox h1 {
+        font-size: 2em;
+    }
+    section {
+        padding: 50px;
+    }
+  }

@@ -20,7 +20,7 @@ func GetAsciiLine(filename string, num int) (string, error) {
 		}
 		lineNum++
 	}
-	return line,nil
+	return line, nil
 }
 
 func AsciiArt(input, filename string) (string, error) {
@@ -34,7 +34,7 @@ func AsciiArt(input, filename string) (string, error) {
 		for i := 0; i < 8; i++ {
 			for _, letter := range word {
 				asciiLine, err := GetAsciiLine(banner, 1+int(letter-' ')*9+i)
-				if err != nil { 
+				if err != nil {
 					return "", err
 				}
 
